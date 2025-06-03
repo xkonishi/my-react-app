@@ -1,13 +1,134 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本的なHTMLページ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ようこそ、私のウェブサイトへ</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>はじめに</h2>
+                <p>これは基本的なHTMLページのテンプレートです。このページには以下の要素が含まれています：</p>
+                
+                <ul>
+                    <li>レスポンシブデザイン</li>
+                    <li>モダンなスタイリング</li>
+                    <li>セマンティックHTML構造</li>
+                    <li>日本語対応</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>特徴</h2>
+                <div class="highlight">
+                    <strong>注目：</strong> このテンプレートは、すぐに使用できるように設計されており、必要に応じてカスタマイズできます。
+                </div>
+                
+                <p>このHTMLファイルは以下の特徴を持っています：</p>
+                <ul>
+                    <li>クリーンで読みやすいコード</li>
+                    <li>モバイルフレンドリーなデザイン</li>
+                    <li>アクセシビリティを考慮した構造</li>
+                    <li>カスタマイズしやすいCSS</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>使い方</h2>
+                <p>このファイルをベースとして、あなたのプロジェクトに合わせて内容を変更してください。CSSスタイルも自由に調整できます。</p>
+                
+                <a href="#" class="button">詳細を見る</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 あなたの名前. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // 簡単なJavaScriptの例
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('ページが読み込まれました！');
+            
+            // ボタンクリックイベントの例
+            const button = document.querySelector('.button');
+            if (button) {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('ボタンがクリックされました！');
+                });
+            }
+        });
+    </script>
+</body>
 </html>
